@@ -1,0 +1,10 @@
+services:
+  dev-db:
+    image: postgres:latest
+    container_name: postgres_db
+    environment:
+      POSTGRES_DB: promptshare
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+    ports:
+      - 5432:5432
