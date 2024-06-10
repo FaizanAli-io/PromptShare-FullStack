@@ -6,20 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prisma:dev:deploy": "npx prisma migrate deploy",
-    "db:dev:rm": "docker compose rm dev-db -s -f -v",
-    "db:dev:up": "docker compose up dev-db -d",
-    "db:dev:restart": "npm run db:dev:rm && npm run db:dev:up && npm run prisma:dev:deploy"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@prisma/client": "^5.15.0",
     "bcrypt": "^5.1.1",
     "mongodb": "^6.7.0",
     "mongoose": "^8.4.1",
     "next": "14.2.3",
     "next-auth": "^4.24.7",
-    "prisma": "^5.15.0",
     "react": "^18",
     "react-dom": "^18"
   },
