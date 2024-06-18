@@ -14,7 +14,7 @@ const EditPrompt = () => {
 
   useEffect(() => {
     const getPromptDetails = async () => {
-      const response = await fetch(`/api/prompt/${promptId}`);
+      const response = await fetch(`../api/prompt/${promptId}`);
       const data = await response.json();
 
       setPost({
@@ -33,7 +33,7 @@ const EditPrompt = () => {
     if (!promptId) return alert("Prompt ID not found.");
 
     try {
-      const response = await fetch(`api/prompt/${promptId}`, {
+      const response = await fetch(`../api/prompt/${promptId}`, {
         method: "PATCH",
         body: JSON.stringify({
           prompt: post.prompt,
@@ -41,9 +41,7 @@ const EditPrompt = () => {
         }),
       });
 
-      if (response.ok) {
-        router.push("/");
-      }
+      if (response.ok) router.back();
     } catch (error) {
       console.log(error);
     } finally {

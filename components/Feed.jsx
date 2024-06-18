@@ -1,21 +1,7 @@
 "use client";
 
-import PromptCard from "./PromptCard";
 import { useState, useEffect } from "react";
-
-const PromptCardList = ({ data, handleTagClick }) => {
-  return (
-    <div className="mt-16 prompt_layout">
-      {data.map((post) => (
-        <PromptCard
-          key={post._id}
-          post={post}
-          handleTagClick={handleTagClick}
-        />
-      ))}
-    </div>
-  );
-};
+import PromptCardList from "./PromptCardList";
 
 const Feed = () => {
   const [searchText, setSearchText] = useState("");
@@ -46,7 +32,7 @@ const Feed = () => {
         />
       </form>
 
-      <PromptCardList data={posts} handleTagClick={() => {}} />
+      <PromptCardList data={posts} />
     </section>
   );
 };
