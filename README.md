@@ -1,6 +1,20 @@
-Tutorial credits go to: [Next.js 14 Full Course 2024](https://www.youtube.com/watch?v=wm5gMKuwSYk)
+# Prompt Share Full-Stack (Next.js)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Description:
+
+The PromptShare-FullStack application is a comprehensive full-stack project developed using Next.js. It serves as a platform for users to share, discover, and collaborate on creative writing prompts. The application integrates both the frontend and backend seamlessly, providing a smooth and interactive user experience.
+
+Key features include:
+
+    User Authentication: Secure user authentication and session management using NextAuth.js.
+    Prompt Management: Users can create, edit, and delete writing prompts, as well as explore prompts shared by others.
+    Real-time Collaboration: Supports real-time collaboration on prompts, allowing multiple users to contribute simultaneously.
+    Responsive Design: Ensures a consistent and responsive user interface across various devices and screen sizes.
+    SEO Optimization: Leveraging Next.js's built-in SEO capabilities to enhance visibility and reach.
+
+This project demonstrates the power of Next.js in building full-stack applications that are performant, user-friendly, and easy to maintain.
+
+Tutorial credits go to: [Next.js 14 Full Course 2024](https://www.youtube.com/watch?v=wm5gMKuwSYk)
 
 ## Getting Started
 
